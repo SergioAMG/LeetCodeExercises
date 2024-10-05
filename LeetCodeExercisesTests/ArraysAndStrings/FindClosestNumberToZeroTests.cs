@@ -11,10 +11,10 @@ namespace LeetCodeExercisesTests.ArraysAndStrings
     [TestFixture]
     public class FindClosestNumberToZeroTests
     {
-        private FindClosestNumberToZero findClosestNumberToZero = new FindClosestNumberToZero();
+        private FindClosestNumberToZero findClosestNumberToZero = new ();
 
         [Test]
-        public void FindClosestNumberOneTest()
+        public void FindClosestNumberTestOne()
         {
             //Arrange
             int[] testCase = [-1, -1];
@@ -28,7 +28,7 @@ namespace LeetCodeExercisesTests.ArraysAndStrings
         }
 
         [Test]
-        public void FindClosestNumberTwoTest()
+        public void FindClosestNumberTestTwo()
         {
             //Arrange
             int[] testCase = [-4, -2, 1, -4, 8];
@@ -42,7 +42,7 @@ namespace LeetCodeExercisesTests.ArraysAndStrings
         }
 
         [Test]
-        public void FindClosestNumberThreeTest()
+        public void FindClosestNumberTestThree()
         {
             //Arrange
             int[] testCase = [2, -1, 1];
@@ -56,7 +56,7 @@ namespace LeetCodeExercisesTests.ArraysAndStrings
         }
 
         [Test]
-        public void FindClosestNumberFourTest()
+        public void FindClosestNumberTestFour()
         {
             //Arrange
             int[] testCase = [-1];
@@ -70,7 +70,7 @@ namespace LeetCodeExercisesTests.ArraysAndStrings
         }
 
         [Test]
-        public void FindClosestNumberFiveTest()
+        public void FindClosestNumberTestFive()
         {
             //Arrange
             int[] testCase = [-1, 1];
@@ -84,7 +84,7 @@ namespace LeetCodeExercisesTests.ArraysAndStrings
         }
 
         [Test]
-        public void FindClosestNumberSixTest()
+        public void FindClosestNumberTestSix()
         {
             //Arrange
             int[] testCase = [0];
@@ -98,7 +98,7 @@ namespace LeetCodeExercisesTests.ArraysAndStrings
         }
 
         [Test]
-        public void FindClosestNumberSevenTest()
+        public void FindClosestNumberTestSeven()
         {
             //Arrange
             int[] testCase = [-1000, -1000];
