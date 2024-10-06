@@ -28,14 +28,84 @@ namespace LeetCodeExercises.ArraysAndStrings
      */
     public class RomanToInteger
     {
+        private Dictionary<char, int> map = new()
+        {
+            { 'I', 1 },
+            { 'V', 5 },
+            { 'X', 10 },
+            { 'L', 50 },
+            { 'C', 100 },
+            { 'D', 500 },
+            { 'M', 1000 }
+        };
+
         /// <summary>
-        /// TimeComplexity = O(n)?
+        /// TimeComplexity = O(n)
         /// </summary>
         /// <param name="s"></param>
         /// <returns></returns>
         public int RomanToInt(string s)
         {
-            return 0;
+            char[] chars = s.ToCharArray();
+            int output = 0;
+            int indexToMove = 0;
+
+            for (int i = chars.Length - 1; i >= 0; i--)
+            {
+                if (i == 0)
+                {
+                    output += map[chars[i]];
+                }
+                else
+                {
+                    Tuple<int, int> result = TrySubstractionRules(chars[i - 1], chars[i]);
+                    output += result.Item1;
+                    indexToMove = result.Item2;
+                }
+                i = i - indexToMove;
+            }
+
+            return output;
+        }
+
+        /// <summary>
+        /// TimeComplexity = O(1)
+        /// </summary>
+        /// <param name="left"></param>
+        /// <param name="right"></param>
+        /// <returns></returns>
+        private Tuple<int,int> TrySubstractionRules(char left, char right)
+        {
+            if (left == 'I' && right == 'V')
+            {
+                return Tuple.Create(4, 1);
+            }
+            else if (left == 'I' && right == 'X')
+            {
+                return Tuple.Create(9, 1);
+            }
+
+            else if (left == 'X' && right == 'L')
+            {
+                return Tuple.Create(40, 1);
+            }
+            else if (left == 'X' && right == 'C')
+            {
+                return Tuple.Create(90, 1);
+            }
+
+            else if (left == 'C' && right == 'D')
+            {
+                return Tuple.Create(400, 1);
+            }
+            else if (left == 'C' && right == 'M')
+            {
+                return Tuple.Create(900, 1);
+            }
+            else
+            {
+                return Tuple.Create(map[right], 0);
+            }
         }
     }
 }

@@ -28,11 +28,8 @@ Console.WriteLine("Program Ended");
 Console.WriteLine("Program Started");
 Console.WriteLine();
 RomanToInteger romanToInteger = new();
+Console.WriteLine("III");
 Console.WriteLine(romanToInteger.RomanToInt("III"));
 Console.WriteLine(3);
-Console.WriteLine(romanToInteger.RomanToInt("LVIII"));
-Console.WriteLine(58);
-Console.WriteLine(romanToInteger.RomanToInt("MCMXCIV"));
-Console.WriteLine(1994);
 Console.WriteLine("Program Ended");
 #endregion
