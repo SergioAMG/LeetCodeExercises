@@ -37,6 +37,7 @@ Console.WriteLine("Program Ended");
 #endregion
 
 #region IsSubsequence
+/*
 Console.WriteLine("Program Started");
 Console.WriteLine();
 IsSubsequence isSubsequence = new();
@@ -44,5 +45,24 @@ Console.WriteLine(isSubsequence.IsSubsequenceOf("acb", "ahbgdc"));
 Console.WriteLine(false);
 Console.WriteLine(isSubsequence.IsSubsequenceOfString("acb", "ahbgdc"));
 Console.WriteLine(false);
+Console.WriteLine("Program Ended");
+*/
+#endregion
+
+#region BestTimeToBuyAndSellStock
+Console.WriteLine("Program Started");
+Console.WriteLine();
+BestTimeToBuyAndSellStock bestTimeToBuyAndSellStock = new();
+Console.WriteLine(bestTimeToBuyAndSellStock.MaxProfit([7, 1, 5, 3, 6, 4]));
+Console.WriteLine(5);
+Console.WriteLine(bestTimeToBuyAndSellStock.MaxProfit([7, 6, 4, 3, 1]));
+Console.WriteLine(0);
+Console.WriteLine(bestTimeToBuyAndSellStock.MaxProfit([2, 1, 4, 7]));
+Console.WriteLine(6);
+Console.WriteLine(bestTimeToBuyAndSellStock.MaxProfit([2, 1]));
+Console.WriteLine(0);
+Console.WriteLine(bestTimeToBuyAndSellStock.MaxProfit([2]));
+Console.WriteLine(0);
+Console.WriteLine();
 Console.WriteLine("Program Ended");
 #endregion
