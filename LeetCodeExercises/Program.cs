@@ -25,11 +25,24 @@ Console.WriteLine("Program Ended");
 #endregion
 
 #region RomanToInteger
+/*
 Console.WriteLine("Program Started");
 Console.WriteLine();
 RomanToInteger romanToInteger = new();
 Console.WriteLine("III");
 Console.WriteLine(romanToInteger.RomanToInt("III"));
 Console.WriteLine(3);
+Console.WriteLine("Program Ended");
+*/
+#endregion
+
+#region IsSubsequence
+Console.WriteLine("Program Started");
+Console.WriteLine();
+IsSubsequence isSubsequence = new();
+Console.WriteLine(isSubsequence.IsSubsequenceOf("acb", "ahbgdc"));
+Console.WriteLine(false);
+Console.WriteLine(isSubsequence.IsSubsequenceOfString("acb", "ahbgdc"));
+Console.WriteLine(false);
 Console.WriteLine("Program Ended");
 #endregion
