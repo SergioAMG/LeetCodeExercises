@@ -14,7 +14,7 @@ namespace LeetCodeExercises.ArraysAndStrings
     public class BestTimeToBuyAndSellStock
     {
         /// <summary>
-        /// TimeComplexity = O(nxm)
+        /// TimeComplexity = O(n)
         /// </summary>
         /// <param name="prices"></param>
         /// <returns></returns>
@@ -22,24 +22,19 @@ namespace LeetCodeExercises.ArraysAndStrings
         {
             int profit = 0;
             int maxProfit = profit;
-            int leftIndex = 0;
-            int rightIndex = leftIndex + 1;
+            int lowestPrice = int.MaxValue;
 
-            while (prices.Length != leftIndex +1)
+            foreach (int price in prices)
             {
-                profit = (Math.Abs(prices[rightIndex]) - Math.Abs(prices[leftIndex])) > 0 ?
-                    Math.Abs(prices[rightIndex]) - Math.Abs(prices[leftIndex]) : 0;
+                if (price < lowestPrice)
+                {
+                    lowestPrice = price;
+                }
+                profit = price - lowestPrice;
                 if (profit > maxProfit)
                 {
                     maxProfit = profit;
                 }
-                rightIndex++;
-                if (rightIndex == prices.Length)
-                {
-                    leftIndex++;
-                    rightIndex = leftIndex + 1;
-                }
-
             }
 
             return maxProfit;
