@@ -74,3 +74,33 @@ Console.WriteLine();
 Console.WriteLine("Program Ended");
 */
 #endregion
+
+#region SummaryRanges
+/*
+Console.WriteLine("Program Started");
+Console.WriteLine();
+SummaryRanges summaryRanges = new();
+PrintListContent(summaryRanges.CalculateSummaryRanges([0, 1, 2, 4, 5, 7]));
+Console.WriteLine();
+PrintListContent(new List<string> { "0->2", "4->5", "7" });
+Console.WriteLine();
+Console.WriteLine("Program Ended");
+*/
+#endregion
+
+#region Helpers
+void PrintListContent(IList<string> list)
+{
+    for (int i = 0; i < list.Count; i++)
+    {
+        if (i != list.Count - 1)
+        {
+            Console.Write(list[i] + ", ");
+        }
+        else
+        {
+            Console.Write(list[i]);
+        }
+    }
+}
+#endregion
