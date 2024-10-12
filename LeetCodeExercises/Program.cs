@@ -32,6 +32,7 @@ RomanToInteger romanToInteger = new();
 Console.WriteLine("III");
 Console.WriteLine(romanToInteger.RomanToInt("III"));
 Console.WriteLine(3);
+Console.WriteLine();
 Console.WriteLine("Program Ended");
 */
 #endregion
@@ -45,6 +46,19 @@ Console.WriteLine(isSubsequence.IsSubsequenceOf("acb", "ahbgdc"));
 Console.WriteLine(false);
 Console.WriteLine(isSubsequence.IsSubsequenceOfString("acb", "ahbgdc"));
 Console.WriteLine(false);
+Console.WriteLine();
+Console.WriteLine("Program Ended");
+*/
+#endregion
+
+#region LongestCommonPrefix
+/*
+Console.WriteLine("Program Started");
+Console.WriteLine();
+LongestCommonPrefix longestCommonPrefix = new();
+Console.WriteLine(longestCommonPrefix.CalculateLongestCommonPrefix(["flower", "flow", "flight"]));
+Console.WriteLine("fl");
+Console.WriteLine();
 Console.WriteLine("Program Ended");
 */
 #endregion
