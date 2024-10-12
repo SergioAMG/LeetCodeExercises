@@ -51,6 +51,18 @@ Console.WriteLine("Program Ended");
 */
 #endregion
 
+#region BestTimeToBuyAndSellStock
+/*
+Console.WriteLine("Program Started");
+Console.WriteLine();
+BestTimeToBuyAndSellStock bestTimeToBuyAndSellStock = new();
+Console.WriteLine(bestTimeToBuyAndSellStock.MaxProfit([7, 1, 5, 3, 6, 4]));
+Console.WriteLine(5);
+Console.WriteLine();
+Console.WriteLine("Program Ended");
+*/
+#endregion
+
 #region LongestCommonPrefix
 /*
 Console.WriteLine("Program Started");
@@ -61,14 +73,4 @@ Console.WriteLine("fl");
 Console.WriteLine();
 Console.WriteLine("Program Ended");
 */
-#endregion
-
-#region BestTimeToBuyAndSellStock
-Console.WriteLine("Program Started");
-Console.WriteLine();
-BestTimeToBuyAndSellStock bestTimeToBuyAndSellStock = new();
-Console.WriteLine(bestTimeToBuyAndSellStock.MaxProfit([7, 1, 5, 3, 6, 4]));
-Console.WriteLine(5);
-Console.WriteLine();
-Console.WriteLine("Program Ended");
 #endregion
