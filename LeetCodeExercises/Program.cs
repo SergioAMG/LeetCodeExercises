@@ -1,5 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using LeetCodeExercises.ArraysAndStrings;
+using LeetCodeExercises.HashmapsAndSets;
+
+// Arrays And Strings
 
 #region FindClosestNumberToZero
 /*
@@ -83,6 +86,20 @@ SummaryRanges summaryRanges = new();
 PrintListContent(summaryRanges.CalculateSummaryRanges([0, 1, 2, 4, 5, 7]));
 Console.WriteLine();
 PrintListContent(new List<string> { "0->2", "4->5", "7" });
+Console.WriteLine();
+Console.WriteLine("Program Ended");
+*/
+#endregion
+
+// Hashmaps And Sets
+
+#region JewelsAndStones
+/*
+Console.WriteLine("Program Started");
+Console.WriteLine();
+JewelsAndStones jewelsAndStones = new JewelsAndStones();
+Console.WriteLine(jewelsAndStones.NumJewelsInStonesOptimized("aA", "aAAbbbb"));
+Console.WriteLine(3);
 Console.WriteLine();
 Console.WriteLine("Program Ended");
 */
